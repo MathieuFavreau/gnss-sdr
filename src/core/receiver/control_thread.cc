@@ -23,6 +23,7 @@
 #endif
 
 #include "control_thread.h"
+#include "concurrent_queue.h"
 #include "concurrent_map.h"
 #include "configuration_interface.h"
 #include "deterministic_clock.h"

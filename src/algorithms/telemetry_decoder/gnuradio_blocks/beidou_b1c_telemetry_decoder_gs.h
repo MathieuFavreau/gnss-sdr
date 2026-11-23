@@ -17,10 +17,12 @@
 #define GNSS_SDR_BEIDOU_B1C_TELEMETRY_DECODER_GS_H
 
 #include "beidou_cnav1_navigation_message.h"
+#include "gnss_satellite.h"
 #include "nav_message_packet.h"
 #include "telemetry_impl_interface.h"
-#include "tlm_conf.h"
 #include <vector>
+class Tlm_Conf;
+
 
 class Gnss_Synchro;
 class beidou_b1c_telemetry_decoder_gs;

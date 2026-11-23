@@ -26,10 +26,8 @@
 
 #include "acq_conf.h"
 #include "acquisition_impl_interface.h"
-#include "channel_fsm.h"
 #include "deterministic_acquisition.h"
 #include "gnss_sdr_fft.h"
-#include "gnss_synchro.h"
 #include <gnuradio/block.h>
 #include <gnuradio/gr_complex.h>
 #include <fstream>
@@ -37,6 +35,10 @@
 #include <string>
 #include <utility>
 #include <vector>
+
+class Gnss_Synchro;
+
+class ChannelFsm;
 
 /** \addtogroup Acquisition
  * \{ */

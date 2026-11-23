@@ -75,6 +75,8 @@
 #include "rtklib_rtkcmn.h"
 #include "rtklib_solver.h"
 #include "sbas_raw_message.h"
+#include "sensor_data/sensor_data_aggregator.h"
+#include "sensor_data/sensor_data_source_configuration.h"
 #include "signal_enabled_flags.h"
 #include "trackingcmd.h"
 #include <boost/archive/xml_iarchive.hpp>  // for xml_iarchive

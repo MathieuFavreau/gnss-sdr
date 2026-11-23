@@ -19,14 +19,13 @@
 #ifndef GNSS_SDR_CHANNEL_FSM_H
 #define GNSS_SDR_CHANNEL_FSM_H
 
-#include "acquisition_interface.h"
-#include "concurrent_queue.h"
-#include "telemetry_decoder_interface.h"
-#include "tracking_interface.h"
 #include <pmt/pmt.h>
 #include <cstdint>
 #include <memory>
 #include <mutex>
+
+template <typename Data>
+class Concurrent_Queue;
 
 /** \addtogroup Channel
  * \{ */
@@ -38,11 +37,15 @@
 /*!
  * \brief This class implements a State Machine for channel
  */
+class AcquisitionInterface;
+class TrackingInterface;
+class TelemetryDecoderInterface;
+
 class ChannelFsm
 {
 public:
     ChannelFsm();
-    virtual ~ChannelFsm() = default;
+    virtual ~ChannelFsm();
     explicit ChannelFsm(std::shared_ptr<AcquisitionInterface> acquisition);
 
     void set_acquisition(std::shared_ptr<AcquisitionInterface> acquisition);

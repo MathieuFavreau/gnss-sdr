@@ -16,6 +16,7 @@
  */
 
 #include "fifo_signal_source.h"
+#include "concurrent_queue.h"
 #include "configuration_interface.h"
 #include "fifo_reader.h"
 #include "gnss_sdr_string_literals.h"

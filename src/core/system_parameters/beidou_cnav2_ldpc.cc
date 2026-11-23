@@ -15,6 +15,7 @@
  */
 
 #include "beidou_cnav2_ldpc.h"
+#include "beidou_ldpc.h"
 
 const BeidouLdpcGraph& beidou_cnav2_ldpc_graph_96_48()
 {

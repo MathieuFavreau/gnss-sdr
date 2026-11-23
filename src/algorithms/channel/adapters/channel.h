@@ -21,10 +21,7 @@
 #ifndef GNSS_SDR_CHANNEL_H
 #define GNSS_SDR_CHANNEL_H
 
-#include "channel_fsm.h"
 #include "channel_interface.h"
-#include "channel_msg_receiver_cc.h"
-#include "concurrent_queue.h"
 #include "gnss_signal.h"
 #include "gnss_synchro.h"
 #include <gnuradio/block.h>
@@ -34,6 +31,9 @@
 #include <memory>
 #include <mutex>
 #include <string>
+
+template <typename Data>
+class Concurrent_Queue;
 
 /** \addtogroup Channel
  * Classes containing a GNSS channel.
@@ -49,6 +49,8 @@ class ConfigurationInterface;
 class AcquisitionInterface;
 class TrackingInterface;
 class TelemetryDecoderInterface;
+class ChannelFsm;
+class channel_msg_receiver_cc;
 
 
 /*!
@@ -70,7 +72,7 @@ public:
         const std::string& signal_str,
         Concurrent_Queue<pmt::pmt_t>* queue);
 
-    ~Channel() = default;  //!< Destructor
+    ~Channel();  //!< Destructor
 
     void connect(gr::top_block_sptr top_block) override;  //!< Connects the tracking block to the top_block and to the telemetry
     void disconnect(gr::top_block_sptr top_block) override;
@@ -100,7 +102,7 @@ private:
     std::shared_ptr<AcquisitionInterface> acq_;
     std::shared_ptr<TrackingInterface> trk_;
     std::shared_ptr<TelemetryDecoderInterface> nav_;
-    channel_msg_receiver_cc_sptr channel_msg_rx_;
+    gnss_shared_ptr<channel_msg_receiver_cc> channel_msg_rx_;
     Gnss_Synchro gnss_synchro_{};
     Gnss_Signal gnss_signal_;
     std::string role_;

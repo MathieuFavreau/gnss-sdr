@@ -18,7 +18,6 @@
 #ifndef GNSS_SDR_MONITOR_PVT_UDP_SINK_H
 #define GNSS_SDR_MONITOR_PVT_UDP_SINK_H
 
-#include "monitor_pvt.h"
 #include "serdes_monitor_pvt.h"
 #include <boost/asio.hpp>
 #include <memory>
@@ -36,6 +35,8 @@ using b_io_context = boost::asio::io_context;
 #else
 using b_io_context = boost::asio::io_service;
 #endif
+
+class Monitor_Pvt;
 
 class Monitor_Pvt_Udp_Sink
 {

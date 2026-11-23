@@ -20,13 +20,15 @@
 #define GNSS_SDR_GEN_SIGNAL_SOURCE_H
 
 
-#include "concurrent_queue.h"
 #include "gnss_block_interface.h"
 #include "signal_source_interface.h"
 #include <pmt/pmt.h>
 #include <memory>
 #include <string>
 
+
+template <typename Data>
+class Concurrent_Queue;
 
 /** \addtogroup Signal_Source
  * \{ */

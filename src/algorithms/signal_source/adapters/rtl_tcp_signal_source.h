@@ -18,7 +18,6 @@
 #ifndef GNSS_SDR_RTL_TCP_SIGNAL_SOURCE_H
 #define GNSS_SDR_RTL_TCP_SIGNAL_SOURCE_H
 
-#include "concurrent_queue.h"
 #include "rtl_tcp_signal_source_c.h"
 #include "signal_source_base.h"
 #include <gnuradio/blocks/deinterleave.h>
@@ -28,6 +27,9 @@
 #include <stdexcept>
 #include <string>
 
+
+template <typename Data>
+class Concurrent_Queue;
 
 /** \addtogroup Signal_Source
  * \{ */

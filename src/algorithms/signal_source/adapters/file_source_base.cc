@@ -15,6 +15,7 @@
  */
 
 #include "file_source_base.h"
+#include "concurrent_queue.h"
 #include "Beidou_B1I.h"
 #include "Beidou_B2a.h"
 #include "Beidou_B3I.h"

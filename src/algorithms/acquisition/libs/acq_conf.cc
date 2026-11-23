@@ -16,6 +16,7 @@
  */
 
 #include "acq_conf.h"
+#include "configuration_interface.h"
 #include "item_type_helpers.h"
 #include <cmath>
 

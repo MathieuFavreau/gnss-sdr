@@ -16,6 +16,7 @@
  */
 
 #include "tcp_cmd_interface.h"
+#include "concurrent_queue.h"
 #include "command_event.h"
 #include "pvt_interface.h"
 #include <boost/asio.hpp>

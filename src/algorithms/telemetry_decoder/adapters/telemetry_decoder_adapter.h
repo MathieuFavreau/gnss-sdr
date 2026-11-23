@@ -19,9 +19,9 @@
 #define GNSS_SDR_TELEMETRY_DECODER_ADAPTER_BASE_H
 
 #include "telemetry_decoder_interface.h"
-#include "telemetry_impl_interface.h"
 
-class ConfigurationInterface;
+class telemetry_impl_interface;
+class Gnss_Satellite;
 
 /** \addtogroup Telemetry_Decoder
  * \{
@@ -41,9 +41,9 @@ public:
         const std::string& implementation,
         unsigned int in_streams,
         unsigned int out_streams,
-        telemetry_impl_interface_sptr decoder);
+        gnss_shared_ptr<telemetry_impl_interface> decoder);
 
-    ~TelemetryDecoderAdapter() override = default;
+    ~TelemetryDecoderAdapter() override;
 
     void connect(gr::top_block_sptr top_block) override;
 
@@ -66,7 +66,7 @@ public:
     size_t item_size() override;
 
 private:
-    telemetry_impl_interface_sptr telemetry_decoder_;
+    gnss_shared_ptr<telemetry_impl_interface> telemetry_decoder_;
     const std::string role_;
     const std::string implementation_;
 };

@@ -29,6 +29,8 @@
 #include "tracking_interface.h"
 #include <string>
 
+class Gnss_Synchro;
+
 /** \addtogroup Tracking
  * \{ */
 /** \addtogroup Tracking_adapters

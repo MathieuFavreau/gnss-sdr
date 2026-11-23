@@ -24,11 +24,14 @@
 #include "galileo_cnav_message.h"  // for Galileo_Cnav_Message
 #include "galileo_fnav_message.h"  // for Galileo_Fnav_Message
 #include "galileo_inav_message.h"  // for Galileo_Inav_Message
+#include "gnss_satellite.h"
 #include "gnss_time.h"
 #include "nav_message_packet.h"
 #include "telemetry_impl_interface.h"  // for telemetry_impl_interface
 #include <boost/circular_buffer.hpp>   // for boost::circular_buffer
 
+
+class Tlm_Conf;
 
 /** \addtogroup Telemetry_Decoder
  * \{ */

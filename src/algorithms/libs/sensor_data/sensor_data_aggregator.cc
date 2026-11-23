@@ -15,6 +15,7 @@
  */
 
 #include "sensor_data_aggregator.h"
+#include "sensor_data_source_configuration.h"
 #include <sstream>
 #include <string>
 #include <utility>

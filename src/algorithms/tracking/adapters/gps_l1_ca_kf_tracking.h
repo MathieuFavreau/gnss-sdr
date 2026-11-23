@@ -19,6 +19,8 @@
  *
  * -----------------------------------------------------------------------------
  */
+class Gnss_Synchro;
+
 
 #ifndef GNSS_SDR_GPS_L1_CA_KF_TRACKING_H
 #define GNSS_SDR_GPS_L1_CA_KF_TRACKING_H

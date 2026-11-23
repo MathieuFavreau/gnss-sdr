@@ -19,7 +19,6 @@
 #ifndef GNSS_SDR_GSS6450_FILE_SIGNAL_SOURCE_H
 #define GNSS_SDR_GSS6450_FILE_SIGNAL_SOURCE_H
 
-#include "concurrent_queue.h"
 #include "gnss_sdr_valve.h"
 #include "signal_source_base.h"
 #include "unpack_gss6450_samples.h"
@@ -36,6 +35,9 @@
 #include <string>
 #include <vector>
 
+
+template <typename Data>
+class Concurrent_Queue;
 
 /** \addtogroup Signal_Source
  * \{ */

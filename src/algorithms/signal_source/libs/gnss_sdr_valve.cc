@@ -18,6 +18,7 @@
  */
 
 #include "gnss_sdr_valve.h"
+#include "concurrent_queue.h"
 #include "command_event.h"
 #include "deterministic_clock.h"
 #include <gnuradio/io_signature.h>  // for io_signature

@@ -24,7 +24,6 @@
 
 #include "cuda_multicorrelator.h"
 #include "gnss_block_interface.h"
-#include "gnss_synchro.h"
 #include "tracking_2nd_DLL_filter.h"
 #include "tracking_FLL_PLL_filter.h"
 #include <boost/circular_buffer.hpp>
@@ -33,6 +32,8 @@
 #include <map>
 #include <string>
 #include <vector>
+
+class Gnss_Synchro;
 
 /** \addtogroup Tracking
  * \{ */

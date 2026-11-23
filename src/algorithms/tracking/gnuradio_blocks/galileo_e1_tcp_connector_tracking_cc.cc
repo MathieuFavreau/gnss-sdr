@@ -23,6 +23,7 @@
  */
 
 #include "galileo_e1_tcp_connector_tracking_cc.h"
+#include "gnss_synchro.h"
 #include "GPS_L1_CA.h"
 #include "Galileo_E1.h"
 #include "galileo_e1_signal_replica.h"

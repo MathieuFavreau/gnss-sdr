@@ -24,6 +24,13 @@
 #include "Galileo_E5b.h"
 #include "Galileo_FNAV.h"
 #include "Galileo_INAV.h"
+#include "galileo_ephemeris.h"
+#include "galileo_has_data.h"
+#include "glonass_gnav_ephemeris.h"
+#include "glonass_gnav_utc_model.h"
+#include "gnss_synchro.h"
+#include "gps_cnav_ephemeris.h"
+#include "gps_ephemeris.h"
 #include "rtklib_rtkcmn.h"
 #include <boost/algorithm/string.hpp>  // for to_upper_copy
 #include <boost/crc.hpp>

@@ -21,7 +21,6 @@
 #define GNSS_SDR_FOUR_BIT_CPX_FILE_SIGNAL_SOURCE_H
 
 #include "file_source_base.h"
-#include "gnss_sdr_timestamp.h"
 #include "unpack_byte_4bit_samples.h"
 #include <gnuradio/blocks/interleaved_short_to_complex.h>
 #include <cstddef>
@@ -35,6 +34,9 @@
 
 
 class ConfigurationInterface;
+class Gnss_Sdr_Timestamp;
+template <typename Data>
+class Concurrent_Queue;
 
 /*!
  * \brief Class that reads signals samples from a file

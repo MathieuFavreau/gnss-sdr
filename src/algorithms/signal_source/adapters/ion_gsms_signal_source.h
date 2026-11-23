@@ -19,7 +19,6 @@
 #ifndef GNSS_SDR_ION_GSMS_SIGNAL_SOURCE_H
 #define GNSS_SDR_ION_GSMS_SIGNAL_SOURCE_H
 
-#include "configuration_interface.h"
 #include "file_source_base.h"
 #include "gnss_sdr_filesystem.h"
 #include "gnss_sdr_timestamp.h"

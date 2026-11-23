@@ -18,7 +18,6 @@
 #ifndef GNSS_SDR_TCP_COMMUNICATION_H
 #define GNSS_SDR_TCP_COMMUNICATION_H
 
-#include "tcp_packet_data.h"
 #include <boost/array.hpp>
 #include <boost/asio.hpp>
 
@@ -37,6 +36,8 @@ using b_io_context = boost::asio::io_service;
 #define NUM_TX_VARIABLES_GALILEO_E1 13
 #define NUM_TX_VARIABLES_GPS_L1_CA 9
 #define NUM_RX_VARIABLES 4
+
+class Tcp_Packet_Data;
 
 /*!
  * \brief TCP communication class

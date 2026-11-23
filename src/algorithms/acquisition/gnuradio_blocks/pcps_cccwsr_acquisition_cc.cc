@@ -21,6 +21,8 @@
  */
 
 #include "pcps_cccwsr_acquisition_cc.h"
+#include "channel_fsm.h"
+#include "gnss_synchro.h"
 #include "GNSS_MATH_CONSTANTS.h"  // TWO_PI
 #include <gnuradio/io_signature.h>
 #include <volk/volk.h>

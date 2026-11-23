@@ -16,6 +16,8 @@
  */
 
 #include "monitor_ephemeris_udp_sink.h"
+#include "galileo_ephemeris.h"
+#include "gps_ephemeris.h"
 #include <boost/archive/binary_oarchive.hpp>
 #include <iostream>
 #include <sstream>

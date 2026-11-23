@@ -16,6 +16,7 @@
  */
 
 #include "nav_message_udp_sink.h"
+#include "nav_message_packet.h"
 #include <iostream>
 #include <sstream>
 #if USE_GLOG_AND_GFLAGS

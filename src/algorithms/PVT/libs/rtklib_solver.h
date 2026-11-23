@@ -46,14 +46,12 @@
 #include "galileo_almanac.h"
 #include "galileo_ephemeris.h"
 #include "galileo_ephemeris_store.h"
-#include "galileo_has_data.h"
 #include "galileo_iono.h"
 #include "galileo_reduced_ced.h"
 #include "galileo_utc_model.h"
 #include "glonass_gnav_almanac.h"
 #include "glonass_gnav_ephemeris.h"
 #include "glonass_gnav_utc_model.h"
-#include "gnss_synchro.h"
 #include "gps_almanac.h"
 #include "gps_cnav2_ephemeris.h"
 #include "gps_cnav_eop.h"
@@ -74,9 +72,7 @@
 #include "qzss_utc_model.h"
 #include "rtklib.h"
 #include "rtklib_conversions.h"
-#include "sbas_raw_message.h"
 #include "sbas_rtklib_corrections.h"
-#include "sensor_data/sensor_data_aggregator.h"
 #include <array>
 #include <cstddef>
 #include <cstdint>
@@ -93,6 +89,10 @@
  * \{ */
 
 struct Ntrip_Rtcm_Snapshot;
+class Galileo_HAS_data;
+class Gnss_Synchro;
+class Sbas_Raw_Message;
+class SensorDataAggregator;
 
 enum class Rtklib_Fixed_Base_Status
 {

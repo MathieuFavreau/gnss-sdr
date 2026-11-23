@@ -19,7 +19,6 @@
 #define GNSS_SDR_TCP_CMD_INTERFACE_H
 
 
-#include "concurrent_queue.h"
 #include <pmt/pmt.h>
 #include <array>
 #include <cstdint>
@@ -29,6 +28,9 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
+
+template <typename Data>
+class Concurrent_Queue;
 
 /** \addtogroup Core
  * \{ */

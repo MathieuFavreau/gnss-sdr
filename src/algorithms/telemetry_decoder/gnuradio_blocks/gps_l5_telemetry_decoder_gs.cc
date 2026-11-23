@@ -17,6 +17,7 @@
 
 
 #include "gps_l5_telemetry_decoder_gs.h"
+#include "tlm_conf.h"
 #include "GPS_L5.h"
 #include "deterministic_clock.h"
 #include "display.h"

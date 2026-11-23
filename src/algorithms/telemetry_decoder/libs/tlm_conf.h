@@ -18,7 +18,6 @@
 #ifndef GNSS_SDR_TLM_CONF_H
 #define GNSS_SDR_TLM_CONF_H
 
-#include "configuration_interface.h"
 #include <string>
 
 /** \addtogroup Telemetry_Decoder
@@ -26,6 +25,8 @@
 /** \addtogroup Telemetry_Decoder_libs
  * \{ */
 
+
+class ConfigurationInterface;
 
 class Tlm_Conf
 {

@@ -33,6 +33,8 @@
  * \{ */
 
 class ConfigurationInterface;
+template <typename Data>
+class Concurrent_Queue;
 
 /*!
  * \brief Class that reads signals samples from a file

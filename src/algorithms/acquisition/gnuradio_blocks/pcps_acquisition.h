@@ -44,7 +44,6 @@
 #endif
 
 #include "acq_conf.h"
-#include "channel_fsm.h"
 #include "deterministic_acquisition.h"
 #include "gnss_sdr_fft.h"
 #if CUDA_GPU_ACCEL
@@ -72,6 +71,8 @@ namespace own = std;
 #include <gsl-lite/gsl-lite.hpp>
 namespace own = gsl_lite;
 #endif
+
+class ChannelFsm;
 
 /** \addtogroup Acquisition
  * Classes for GNSS signal acquisition

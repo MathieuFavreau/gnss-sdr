@@ -21,7 +21,6 @@
 #include "nav_message.pb.h"  // file created by Protocol Buffers at compile time
 #include "nav_message_packet.h"
 #include "protobuf_cleanup_manager.h"
-#include <cstdint>
 #include <memory>
 #include <string>
 #include <utility>

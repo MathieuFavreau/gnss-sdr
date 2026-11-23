@@ -15,6 +15,7 @@
  */
 
 #include "beidou_b2a_telemetry_decoder_gs.h"
+#include "tlm_conf.h"
 #include "Beidou_B2a.h"
 #include "Beidou_DNAV.h"
 #include "GNSS_MATH_CONSTANTS.h"

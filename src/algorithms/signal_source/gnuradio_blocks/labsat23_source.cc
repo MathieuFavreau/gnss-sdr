@@ -19,6 +19,7 @@
 
 
 #include "labsat23_source.h"
+#include "concurrent_queue.h"
 #include "INIReader.h"
 #include "command_event.h"
 #include "deterministic_clock.h"

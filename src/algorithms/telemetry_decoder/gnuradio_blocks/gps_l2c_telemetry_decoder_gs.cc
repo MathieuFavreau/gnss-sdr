@@ -16,6 +16,7 @@
 
 
 #include "gps_l2c_telemetry_decoder_gs.h"
+#include "tlm_conf.h"
 #include "GPS_L2C.h"  // for GPS_L2_CNAV_DATA_PAGE_BITS, GPS_L...
 #include "deterministic_clock.h"
 #include "display.h"

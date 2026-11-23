@@ -18,7 +18,6 @@
 #ifndef GNSS_SDR_SENSOR_DATA_AGGREGATOR_H
 #define GNSS_SDR_SENSOR_DATA_AGGREGATOR_H
 
-#include "sensor_data_source_configuration.h"
 #include "sensor_identifier.h"
 #include <gnuradio/tags.h>
 #include <cstdint>
@@ -30,6 +29,7 @@
 /** \addtogroup Algorithm_libs algorithms_libs
  * \{ */
 
+class SensorDataSourceConfiguration;
 
 template <typename DataType>
 struct SensorDataSample

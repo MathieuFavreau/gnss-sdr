@@ -24,7 +24,6 @@
 #define GNSS_SDR_TRACKING_INTERFACE_H
 
 #include "gnss_block_interface.h"
-#include "gnss_synchro.h"
 
 /** \addtogroup Core
  * \{ */
@@ -34,6 +33,8 @@
 
 template <typename Data>
 class Concurrent_Queue;
+
+class Gnss_Synchro;
 
 /*!
  * \brief This abstract class represents an interface to a tracking block.

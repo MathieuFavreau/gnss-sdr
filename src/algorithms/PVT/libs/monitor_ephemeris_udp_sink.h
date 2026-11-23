@@ -18,8 +18,6 @@
 #ifndef GNSS_SDR_MONITOR_EPHEMERIS_UDP_SINK_H
 #define GNSS_SDR_MONITOR_EPHEMERIS_UDP_SINK_H
 
-#include "galileo_ephemeris.h"
-#include "gps_ephemeris.h"
 #include "serdes_galileo_eph.h"
 #include "serdes_gps_eph.h"
 #include <boost/asio.hpp>
@@ -38,6 +36,9 @@ using b_io_context = boost::asio::io_context;
 #else
 using b_io_context = boost::asio::io_service;
 #endif
+
+class Galileo_Ephemeris;
+class Gps_Ephemeris;
 
 class Monitor_Ephemeris_Udp_Sink
 {

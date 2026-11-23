@@ -25,7 +25,6 @@
 
 #include "cpu_multicorrelator.h"
 #include "gnss_block_interface.h"
-#include "gnss_synchro.h"
 #include "tcp_communication.h"
 #include <boost/circular_buffer.hpp>
 #include <gnuradio/block.h>
@@ -33,6 +32,8 @@
 #include <fstream>
 #include <map>
 #include <string>
+
+class Gnss_Synchro;
 
 /** \addtogroup Tracking
  * \{ */

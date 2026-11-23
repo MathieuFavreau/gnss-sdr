@@ -17,6 +17,7 @@
  */
 
 #include "rtl_tcp_signal_source.h"
+#include "concurrent_queue.h"
 #include "GPS_L1_CA.h"
 #include "configuration_interface.h"
 #include "gnss_sdr_string_literals.h"

@@ -20,13 +20,6 @@
 
 
 #include "concurrent_queue.h"
-#include "galileo_ephemeris.h"
-#include "galileo_has_data.h"
-#include "glonass_gnav_ephemeris.h"
-#include "glonass_gnav_utc_model.h"
-#include "gnss_synchro.h"
-#include "gps_cnav_ephemeris.h"
-#include "gps_ephemeris.h"
 #include <boost/asio.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <algorithm>  // for std::max, std::min, std::copy_n
@@ -65,6 +58,13 @@ using b_io_context = boost::asio::io_context;
 using b_io_context = boost::asio::io_service;
 #endif
 
+class Galileo_Ephemeris;
+class Galileo_HAS_data;
+class Glonass_Gnav_Ephemeris;
+class Glonass_Gnav_Utc_Model;
+class Gnss_Synchro;
+class Gps_CNAV_Ephemeris;
+class Gps_Ephemeris;
 
 /*!
  * \brief This class implements the generation and reading of some Message Types

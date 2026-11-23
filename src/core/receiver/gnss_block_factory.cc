@@ -25,6 +25,7 @@
 
 
 #include "gnss_block_factory.h"
+#include "concurrent_queue.h"
 #include "acquisition_interface.h"
 #include "array_signal_conditioner.h"
 #include "beamformer_filter.h"

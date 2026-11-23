@@ -17,6 +17,7 @@
 
 #include "nav_message_monitor.h"
 #include "gnss_sdr_make_unique.h"
+#include "nav_message_udp_sink.h"
 #include <gnuradio/io_signature.h>
 #include <cstddef>   // size_t
 #include <typeinfo>  // typeid
@@ -62,6 +63,9 @@ nav_message_monitor::nav_message_monitor(const std::vector<std::string>& address
 #endif
     nav_message_udp_sink_ = std::make_unique<Nav_Message_Udp_Sink>(addresses, port);
 }
+
+
+nav_message_monitor::~nav_message_monitor() = default;
 
 
 void nav_message_monitor::msg_handler_nav_message(const pmt::pmt_t& msg)

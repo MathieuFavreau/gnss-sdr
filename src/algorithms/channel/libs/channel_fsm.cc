@@ -17,8 +17,12 @@
  */
 
 #include "channel_fsm.h"
+#include "concurrent_queue.h"
+#include "acquisition_interface.h"
 #include "channel_event.h"
 #include "deterministic_clock.h"
+#include "telemetry_decoder_interface.h"
+#include "tracking_interface.h"
 #include <utility>
 
 #if USE_GLOG_AND_GFLAGS
@@ -35,6 +39,9 @@ ChannelFsm::ChannelFsm()
     acq_ = nullptr;
     trk_ = nullptr;
 }
+
+
+ChannelFsm::~ChannelFsm() = default;
 
 
 ChannelFsm::ChannelFsm(std::shared_ptr<AcquisitionInterface> acquisition)

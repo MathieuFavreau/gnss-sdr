@@ -25,6 +25,8 @@
 #include <cstddef>
 #include <string>
 
+class Gnss_Synchro;
+
 /** \addtogroup Tracking
  * Classes for GNSS signal tracking.
  * \{ */

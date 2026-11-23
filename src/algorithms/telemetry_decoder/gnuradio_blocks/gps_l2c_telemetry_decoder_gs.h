@@ -19,6 +19,7 @@
 
 
 #include "gps_cnav_navigation_message.h"
+#include "gnss_satellite.h"
 #include "nav_message_packet.h"
 #include "telemetry_impl_interface.h"
 #include <cstdint>
@@ -27,6 +28,8 @@ extern "C"
 {
 #include "cnav_msg.h"
 }
+
+class Tlm_Conf;
 
 /** \addtogroup Telemetry_Decoder
  * \{ */

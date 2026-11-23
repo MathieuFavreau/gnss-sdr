@@ -17,6 +17,7 @@
  */
 
 #include "gen_signal_source.h"
+#include "concurrent_queue.h"
 #include <boost/lexical_cast.hpp>
 #include <gnuradio/io_signature.h>
 #include <gnuradio/message.h>

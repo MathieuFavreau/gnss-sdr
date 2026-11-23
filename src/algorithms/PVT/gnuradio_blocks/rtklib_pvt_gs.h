@@ -19,13 +19,9 @@
 
 #include "deterministic_clock.h"
 #include "gnss_block_interface.h"
-#include "gnss_sdr_make_unique.h"
 #include "gnss_synchro.h"
 #include "gnss_time.h"
-#include "osnma_data.h"
 #include "rtklib.h"
-#include "sensor_data/sensor_data_aggregator.h"
-#include "sensor_data/sensor_data_source_configuration.h"
 #include <boost/date_time/gregorian/gregorian.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <boost/interprocess/ipc/message_queue.hpp>
@@ -81,6 +77,8 @@ class Rtcm_Printer;
 class An_Packet_Printer;
 class Has_Simple_Printer;
 class Rtklib_Solver;
+class SensorDataAggregator;
+class SensorDataSourceConfiguration;
 class rtklib_pvt_gs;
 
 using rtklib_pvt_gs_sptr = gnss_shared_ptr<rtklib_pvt_gs>;

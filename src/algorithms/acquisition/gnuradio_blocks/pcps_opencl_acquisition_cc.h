@@ -43,7 +43,6 @@
 #include "deterministic_acquisition.h"
 #include "gnss_block_interface.h"
 #include "gnss_sdr_fft.h"
-#include "gnss_synchro.h"
 #include <gnuradio/block.h>
 #include <gnuradio/gr_complex.h>
 #include <atomic>
@@ -53,6 +52,8 @@
 #include <mutex>
 #include <thread>
 #include <vector>
+
+class Gnss_Synchro;
 
 /** \addtogroup Acquisition
  * \{ */

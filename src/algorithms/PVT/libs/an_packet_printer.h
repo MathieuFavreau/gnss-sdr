@@ -21,7 +21,6 @@
 #ifndef GNSS_SDR_AN_PACKET_PRINTER_H
 #define GNSS_SDR_AN_PACKET_PRINTER_H
 
-#include "gnss_synchro.h"
 #include <array>
 #include <chrono>
 #include <cstddef>
@@ -35,6 +34,7 @@
  * \{ */
 
 class Rtklib_Solver;
+class Gnss_Synchro;
 
 struct sdr_gnss_packet_t
 {

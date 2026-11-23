@@ -15,6 +15,7 @@
  */
 
 #include "gps_l1_ca_dll_pll_tracking_gpu_cc.h"
+#include "gnss_synchro.h"
 #include "GPS_L1_CA.h"
 #include "gnss_satellite.h"
 #include "gnss_sdr_flags.h"

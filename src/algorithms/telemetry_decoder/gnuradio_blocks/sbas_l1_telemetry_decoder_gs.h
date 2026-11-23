@@ -19,6 +19,7 @@
 #ifndef GNSS_SDR_SBAS_L1_TELEMETRY_DECODER_GS_H
 #define GNSS_SDR_SBAS_L1_TELEMETRY_DECODER_GS_H
 
+#include "gnss_satellite.h"
 #include "telemetry_impl_interface.h"
 #include <boost/crc.hpp>     // for crc_optimal
 #include <gnuradio/types.h>  // for gr_vector_const_void_star

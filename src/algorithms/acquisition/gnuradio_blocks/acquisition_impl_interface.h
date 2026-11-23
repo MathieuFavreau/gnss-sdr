@@ -24,10 +24,11 @@
 #define GNSS_SDR_ACQUISITION_IMPL_INTERFACE_H
 
 #include "gnss_block_interface.h"
-#include "gnss_synchro.h"
 #include <gnuradio/block.h>
 #include <complex>
 #include <memory>
+
+class Gnss_Synchro;
 
 /** \addtogroup Core
  * \{ */

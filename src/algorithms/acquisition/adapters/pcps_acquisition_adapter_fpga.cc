@@ -15,6 +15,7 @@
 
 
 #include "pcps_acquisition_adapter_fpga.h"
+#include "gnss_synchro.h"
 #include "GPS_L1_CA.h"
 #include "GPS_L2C.h"
 #include "GPS_L5.h"

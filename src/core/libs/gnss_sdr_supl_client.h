@@ -40,7 +40,6 @@ extern "C"
 #include "gps_iono.h"
 #include "gps_utc_model.h"
 #include <cstdint>
-#include <fstream>
 #include <map>
 #include <string>
 

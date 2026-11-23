@@ -19,12 +19,14 @@
 
 #include "signal_source_base.h"
 //
-#include "concurrent_queue.h"
 #include <gnuradio/blocks/file_sink.h>  // for dump
 #include <gnuradio/blocks/vector_to_stream.h>
 #include <gnuradio/zeromq/sub_source.h>
 #include <pmt/pmt.h>
 #include <string>
+
+template <typename Data>
+class Concurrent_Queue;
 
 /** \addtogroup Signal_Source
  * \{ */

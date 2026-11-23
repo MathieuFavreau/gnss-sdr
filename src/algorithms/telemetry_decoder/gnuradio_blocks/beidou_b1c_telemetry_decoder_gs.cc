@@ -15,6 +15,7 @@
  */
 
 #include "beidou_b1c_telemetry_decoder_gs.h"
+#include "tlm_conf.h"
 #include "Beidou_B1C.h"
 #include "Beidou_B1C_codes.h"
 #include "Beidou_CNAV1.h"

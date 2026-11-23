@@ -18,6 +18,7 @@
 
 
 #include "dll_pll_conf_fpga.h"
+#include "configuration_interface.h"
 #include "gnss_sdr_flags.h"
 
 #if USE_GLOG_AND_GFLAGS

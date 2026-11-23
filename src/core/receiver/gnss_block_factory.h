@@ -24,11 +24,13 @@
 #ifndef GNSS_SDR_BLOCK_FACTORY_H
 #define GNSS_SDR_BLOCK_FACTORY_H
 
-#include "concurrent_queue.h"
 #include <pmt/pmt.h>
 #include <memory>  // for unique_ptr
 #include <string>  // for string
 #include <vector>  // for vector
+
+template <typename Data>
+class Concurrent_Queue;
 
 /** \addtogroup Core
  * \{ */

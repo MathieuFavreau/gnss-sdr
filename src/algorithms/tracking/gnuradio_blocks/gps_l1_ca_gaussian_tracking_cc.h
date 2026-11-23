@@ -34,7 +34,6 @@
 #include "cpu_multicorrelator_real_codes.h"
 #include "deterministic_tracking.h"
 #include "gnss_block_interface.h"
-#include "gnss_synchro.h"
 #include "tracking_2nd_DLL_filter.h"
 #include "tracking_2nd_PLL_filter.h"
 #include <armadillo>
@@ -44,6 +43,8 @@
 #include <fstream>
 #include <map>
 #include <string>
+
+class Gnss_Synchro;
 
 /** \addtogroup Tracking
  * \{ */

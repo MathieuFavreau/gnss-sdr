@@ -19,6 +19,7 @@
  */
 
 #include "kf_conf.h"
+#include "configuration_interface.h"
 #include "gnss_sdr_flags.h"
 #include "item_type_helpers.h"
 

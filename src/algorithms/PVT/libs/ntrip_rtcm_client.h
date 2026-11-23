@@ -17,8 +17,8 @@
 #ifndef GNSS_SDR_NTRIP_RTCM_CLIENT_H
 #define GNSS_SDR_NTRIP_RTCM_CLIENT_H
 
-#include "pvt_conf.h"
 #include "rtklib.h"
+#include "secure_string.h"
 #include <array>
 #include <cstddef>
 #include <cstdint>
@@ -28,6 +28,7 @@
 #include <vector>
 
 class Ntrip_Rtcm_Client_Test_Access;
+class Pvt_Conf;
 
 /** \addtogroup PVT
  * \{ */

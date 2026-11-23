@@ -15,6 +15,8 @@
  */
 
 #include "pcps_quicksync_acquisition_cc.h"
+#include "channel_fsm.h"
+#include "gnss_synchro.h"
 #include "GNSS_MATH_CONSTANTS.h"
 #include <gnuradio/io_signature.h>
 #include <volk/volk.h>

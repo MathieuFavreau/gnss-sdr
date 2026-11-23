@@ -25,7 +25,6 @@
 #define GNSS_SDR_GNSS_FLOWGRAPH_H
 
 #include "channel_status_msg_receiver.h"
-#include "concurrent_queue.h"
 #include "conditioner_scheduling_policy.h"
 #include "galileo_e6_has_msg_receiver.h"
 #include "galileo_tow_map.h"
@@ -33,7 +32,6 @@
 #include "gnss_signal.h"
 #include "osnma_msg_receiver.h"
 #include "pvt_interface.h"
-#include "satellite_visibility.h"
 #include <gnuradio/blocks/null_sink.h>  // for null_sink
 #include <gnuradio/runtime_types.h>     // for basic_block_sptr, top_block_sptr
 #include <pmt/pmt.h>                    // for pmt_t
@@ -49,6 +47,9 @@
 #include <unordered_map>                // for unordered_map
 #include <utility>                      // for pair
 #include <vector>                       // for vector
+
+template <typename Data>
+class Concurrent_Queue;
 #if ENABLE_FPGA
 #include "gnss_sdr_fpga_sample_counter.h"
 #endif
@@ -64,6 +65,7 @@ class ConfigurationInterface;
 class GNSSBlockInterface;
 class Gnss_Satellite;
 class SignalSourceInterface;
+class SatelliteVisibility;
 class StreamBatcherDeadline;
 
 /*! \brief This class represents a GNSS flow graph.

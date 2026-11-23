@@ -27,13 +27,14 @@
 
 #include "cpu_multicorrelator.h"
 #include "gnss_block_interface.h"
-#include "gnss_synchro.h"
 #include "tcp_communication.h"
 #include <gnuradio/block.h>
 #include <volk_gnsssdr/volk_gnsssdr_alloc.h>  // for volk_gnsssdr::vector
 #include <fstream>
 #include <map>
 #include <string>
+
+class Gnss_Synchro;
 
 /** \addtogroup Tracking
  * \{ */

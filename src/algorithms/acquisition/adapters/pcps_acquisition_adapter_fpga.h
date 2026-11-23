@@ -20,7 +20,6 @@
 #include "acq_conf_fpga.h"
 #include "acquisition_interface.h"
 #include "channel_fsm.h"
-#include "gnss_synchro.h"
 #include "pcps_acquisition_fpga.h"
 #include "signal_flag.h"
 #include <gnuradio/runtime_types.h>
@@ -29,6 +28,8 @@
 #include <cstdint>
 #include <memory>
 #include <string>
+class Gnss_Synchro;
+
 
 class ConfigurationInterface;
 

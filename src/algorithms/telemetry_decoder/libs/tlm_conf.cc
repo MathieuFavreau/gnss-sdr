@@ -16,6 +16,7 @@
  */
 
 #include "tlm_conf.h"
+#include "configuration_interface.h"
 #include <utility>
 
 

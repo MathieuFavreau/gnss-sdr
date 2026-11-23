@@ -20,13 +20,16 @@
 #define GNSS_SDR_PCPS_ACQUISITION_ADAPTER_H
 
 #include "acq_conf.h"
-#include "channel_fsm.h"
+#include "acquisition_interface.h"
 #include "complex_byte_to_float_x2.h"
-#include "gnss_synchro.h"
 #include "pcps_acquisition.h"
 #include "signal_flag.h"
 #include <gnuradio/blocks/float_to_complex.h>
 #include <volk_gnsssdr/volk_gnsssdr_alloc.h>
+
+class Gnss_Synchro;
+
+class ChannelFsm;
 
 /** \addtogroup Acquisition
  * Classes for GNSS signal acquisition

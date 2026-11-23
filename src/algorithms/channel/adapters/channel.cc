@@ -16,8 +16,10 @@
  */
 
 #include "channel.h"
+#include "concurrent_queue.h"
 #include "acquisition_interface.h"
 #include "channel_fsm.h"
+#include "channel_msg_receiver_cc.h"
 #include "configuration_interface.h"
 #include "deterministic_clock.h"
 #include "telemetry_decoder_interface.h"
@@ -94,6 +96,9 @@ Channel::Channel(const ConfigurationInterface* configuration,
                 [msg_rx](int event) { msg_rx->dispatch_event(event); });
         }
 }
+
+
+Channel::~Channel() = default;
 
 
 void Channel::connect(gr::top_block_sptr top_block)

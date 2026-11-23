@@ -20,6 +20,7 @@
  */
 
 #include "gps_l1_ca_telemetry_decoder_gs.h"
+#include "tlm_conf.h"
 #include "deterministic_clock.h"
 #include "dump_logger_helper.h"
 #include "gnss_sdr_make_unique.h"  // for std::make_unique in C++11

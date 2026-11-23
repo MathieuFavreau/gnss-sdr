@@ -18,6 +18,7 @@
 
 #include "in_memory_configuration.h"
 #include "gnss_sdr_make_unique.h"
+#include "string_converter.h"
 #include <utility>
 
 

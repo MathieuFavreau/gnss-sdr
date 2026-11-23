@@ -17,7 +17,9 @@
 #ifndef GNSS_SDR_BEIDOU_CNAV2_LDPC_H
 #define GNSS_SDR_BEIDOU_CNAV2_LDPC_H
 
-#include "beidou_ldpc.h"
+#include <cstdint>
+
+struct BeidouLdpcGraph;
 
 /** \addtogroup Core
  * \{ */

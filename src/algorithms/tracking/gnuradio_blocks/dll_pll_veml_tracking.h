@@ -26,7 +26,6 @@
 #include "exponential_smoother.h"
 #include "gnss_block_interface.h"
 #include "gnss_time.h"  // for timetags produced by File_Timestamp_Signal_Source
-#include "tow_to_trk.h"
 #include "tracking_FLL_PLL_filter.h"  // for PLL/FLL filter
 #include "tracking_loop_filter.h"     // for DLL filter
 #include <boost/circular_buffer.hpp>
@@ -51,6 +50,7 @@
 
 
 class Gnss_Synchro;
+class TOW_to_trk;
 class dll_pll_veml_tracking;
 
 using dll_pll_veml_tracking_sptr = gnss_shared_ptr<dll_pll_veml_tracking>;

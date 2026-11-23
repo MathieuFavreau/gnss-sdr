@@ -19,6 +19,7 @@
 
 
 #include "gps_cnav_navigation_message.h"  // for Gps_CNAV_Navigation_Message
+#include "gnss_satellite.h"
 #include "nav_message_packet.h"
 #include "telemetry_impl_interface.h"
 #include <boost/circular_buffer.hpp>
@@ -28,6 +29,8 @@ extern "C"
 {
 #include "cnav_msg.h"
 }
+
+class Tlm_Conf;
 
 /** \addtogroup Telemetry_Decoder
  * \{ */

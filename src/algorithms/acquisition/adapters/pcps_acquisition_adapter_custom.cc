@@ -17,6 +17,8 @@
  */
 
 #include "pcps_acquisition_adapter_custom.h"
+#include "channel_fsm.h"
+#include "gnss_synchro.h"
 #include "GPS_L1_CA.h"
 #include "Galileo_E1.h"
 #include "Galileo_E5a.h"

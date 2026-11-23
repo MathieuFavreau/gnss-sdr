@@ -17,7 +17,9 @@
 
 
 #include "telemetry_decoder_adapter.h"
+#include "gnss_satellite.h"
 #include "gnss_synchro.h"
+#include "telemetry_impl_interface.h"
 
 #if USE_GLOG_AND_GFLAGS
 #include <glog/logging.h>
@@ -31,7 +33,7 @@ TelemetryDecoderAdapter::TelemetryDecoderAdapter(
     const std::string& implementation,
     unsigned int in_streams,
     unsigned int out_streams,
-    telemetry_impl_interface_sptr decoder) : telemetry_decoder_(std::move(decoder)),
+    gnss_shared_ptr<telemetry_impl_interface> decoder) : telemetry_decoder_(std::move(decoder)),
                                              role_(role),
                                              implementation_(implementation)
 {
@@ -49,6 +51,9 @@ TelemetryDecoderAdapter::TelemetryDecoderAdapter(
                        << out_streams << " provided)";
         }
 }
+
+
+TelemetryDecoderAdapter::~TelemetryDecoderAdapter() = default;
 
 
 void TelemetryDecoderAdapter::connect(gr::top_block_sptr top_block)

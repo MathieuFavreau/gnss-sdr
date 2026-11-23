@@ -19,11 +19,13 @@
 #ifndef GNSS_SDR_FIFO_SIGNAL_SOURCE_H
 #define GNSS_SDR_FIFO_SIGNAL_SOURCE_H
 
-#include "concurrent_queue.h"
 #include "signal_source_base.h"
 #include <pmt/pmt.h>
 #include <cstddef>
 #include <string>
+
+template <typename Data>
+class Concurrent_Queue;
 
 /** \addtogroup Signal_Source
  * \{ */

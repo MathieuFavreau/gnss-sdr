@@ -17,6 +17,7 @@
 
 
 #include "channel_msg_receiver_cc.h"
+#include "channel_fsm.h"
 #include <gnuradio/gr_complex.h>
 #include <gnuradio/io_signature.h>
 #include <cstdint>
@@ -64,6 +65,9 @@ channel_msg_receiver_cc::channel_msg_receiver_cc(std::shared_ptr<ChannelFsm> cha
 #endif
 #endif
 }
+
+
+channel_msg_receiver_cc::~channel_msg_receiver_cc() = default;
 
 
 void channel_msg_receiver_cc::msg_handler_channel_events(const pmt::pmt_t& msg)

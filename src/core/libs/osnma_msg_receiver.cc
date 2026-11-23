@@ -20,6 +20,7 @@
 
 #include "osnma_msg_receiver.h"
 #include "Galileo_OSNMA.h"
+#include "galileo_inav_message.h"
 #include "gnss_crypto.h"
 #include "gnss_satellite.h"
 #include "gnss_sdr_filesystem.h"

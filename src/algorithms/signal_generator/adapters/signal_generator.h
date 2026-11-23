@@ -19,7 +19,6 @@
 #ifndef GNSS_SDR_SIGNAL_GENERATOR_H
 #define GNSS_SDR_SIGNAL_GENERATOR_H
 
-#include "concurrent_queue.h"
 #include "gnss_block_interface.h"
 #include "signal_generator_c.h"
 #include <gnuradio/blocks/file_sink.h>
@@ -29,6 +28,9 @@
 #include <memory>
 #include <string>
 #include <vector>
+template <typename Data>
+class Concurrent_Queue;
+
 
 class ConfigurationInterface;
 

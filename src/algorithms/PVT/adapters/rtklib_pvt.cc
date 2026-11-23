@@ -16,6 +16,7 @@
 
 
 #include "rtklib_pvt.h"
+#include "sensor_data/sensor_data_source_configuration.h"
 #include "GNSS_MATH_CONSTANTS.h"       // for D2R
 #include "SBAS_L1.h"                   // for SBAS PRN limits
 #include "configuration_interface.h"   // for ConfigurationInterface

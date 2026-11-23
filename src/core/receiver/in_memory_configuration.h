@@ -22,7 +22,6 @@
 #define GNSS_SDR_IN_MEMORY_CONFIGURATION_H
 
 #include "configuration_interface.h"
-#include "string_converter.h"
 #include <cstdint>
 #include <map>
 #include <memory>
@@ -33,6 +32,7 @@
 /** \addtogroup Core_Receiver
  * \{ */
 
+class StringConverter;
 
 /*!
  * \brief  This class is an implementation of the interface ConfigurationInterface.

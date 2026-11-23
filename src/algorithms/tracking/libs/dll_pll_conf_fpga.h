@@ -21,7 +21,6 @@
 #ifndef GNSS_SDR_DLL_PLL_CONF_FPGA_H
 #define GNSS_SDR_DLL_PLL_CONF_FPGA_H
 
-#include "configuration_interface.h"
 #include <cstdint>
 #include <string>
 
@@ -30,6 +29,8 @@
 /** \addtogroup Tracking_libs
  * \{ */
 
+
+class ConfigurationInterface;
 
 class Dll_Pll_Conf_Fpga
 {

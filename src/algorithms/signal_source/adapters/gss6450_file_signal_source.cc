@@ -17,6 +17,7 @@
  */
 
 #include "gss6450_file_signal_source.h"
+#include "concurrent_queue.h"
 #include "configuration_interface.h"
 #include <algorithm>
 #include <array>

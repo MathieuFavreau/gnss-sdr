@@ -17,6 +17,8 @@
  */
 
 #include "pcps_acquisition_fine_doppler_cc.h"
+#include "channel_fsm.h"
+#include "gnss_synchro.h"
 #include "GPS_L1_CA.h"  // for GPS_L1_CA_CHIP_PERIOD_S
 #include "gnss_sdr_create_directory.h"
 #include "gnss_sdr_filesystem.h"

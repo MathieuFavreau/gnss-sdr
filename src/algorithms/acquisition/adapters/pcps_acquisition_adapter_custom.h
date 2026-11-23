@@ -20,12 +20,15 @@
 #define GNSS_SDR_PCPS_ACQUISITION_ADAPTER_CUSTOM_H
 
 #include "acquisition_impl_interface.h"
-#include "channel_fsm.h"
-#include "gnss_synchro.h"
+#include "acquisition_interface.h"
 #include "pcps_acquisition.h"
 #include "signal_flag.h"
 #include <gnuradio/blocks/stream_to_vector.h>
 #include <volk_gnsssdr/volk_gnsssdr_alloc.h>
+
+class Gnss_Synchro;
+
+class ChannelFsm;
 
 /** \addtogroup Acquisition
  * Classes for GNSS signal acquisition

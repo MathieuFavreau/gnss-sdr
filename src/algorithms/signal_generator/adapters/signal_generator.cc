@@ -17,6 +17,7 @@
 
 
 #include "signal_generator.h"
+#include "concurrent_queue.h"
 #include "configuration_interface.h"
 #include <cstdint>
 #include <utility>

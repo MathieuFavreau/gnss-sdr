@@ -41,10 +41,8 @@
 #endif
 
 #include "acq_conf.h"
-#include "channel_fsm.h"
 #include "deterministic_acquisition.h"
 #include "gnss_sdr_fft.h"
-#include "gnss_synchro.h"
 #include <armadillo>
 #include <gnuradio/block.h>
 #include <gnuradio/gr_complex.h>
@@ -55,6 +53,10 @@
 #include <string>
 #include <utility>
 
+
+class Gnss_Synchro;
+
+class ChannelFsm;
 
 /** \addtogroup Acquisition
  * \{ */

@@ -22,9 +22,10 @@
 #ifndef GNSS_SDR_Kf_CONF_H
 #define GNSS_SDR_Kf_CONF_H
 
-#include "configuration_interface.h"
 #include <cstdint>
 #include <string>
+
+class ConfigurationInterface;
 
 class Kf_Conf
 {

@@ -15,6 +15,7 @@
  */
 
 #include "sensor_data_source_configuration.h"
+#include "configuration_interface.h"
 #include "gnss_sdr_string_literals.h"
 #include <fstream>
 

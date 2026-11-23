@@ -19,7 +19,6 @@
 #define GNSS_SDR_NAV_MESSAGE_MONITOR_H
 
 #include "gnss_block_interface.h"
-#include "nav_message_udp_sink.h"
 #include <gnuradio/block.h>
 #include <pmt/pmt.h>
 #include <cstdint>
@@ -33,6 +32,7 @@
  * \{ */
 
 class nav_message_monitor;
+class Nav_Message_Udp_Sink;
 
 using nav_message_monitor_sptr = gnss_shared_ptr<nav_message_monitor>;
 
@@ -45,7 +45,7 @@ nav_message_monitor_sptr nav_message_monitor_make(const std::vector<std::string>
 class nav_message_monitor : public gr::block
 {
 public:
-    ~nav_message_monitor() = default;  //!< Default destructor
+    ~nav_message_monitor() override;  //!< Default destructor
 
 private:
     friend nav_message_monitor_sptr nav_message_monitor_make(const std::vector<std::string>& addresses, uint16_t port);

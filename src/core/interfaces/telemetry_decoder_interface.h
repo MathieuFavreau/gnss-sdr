@@ -24,13 +24,13 @@
 #define GNSS_SDR_TELEMETRY_DECODER_INTERFACE_H
 
 #include "gnss_block_interface.h"
-#include "gnss_satellite.h"
 
 /** \addtogroup Core
  * \{ */
 /** \addtogroup GNSS_Block_Interfaces
  * \{ */
 
+class Gnss_Satellite;
 
 /*!
  * \brief This abstract class represents an interface to a navigation GNSS block.

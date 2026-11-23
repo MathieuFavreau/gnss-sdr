@@ -19,6 +19,7 @@
  */
 
 #include "beidou_dnav_telemetry_decoder_gs.h"
+#include "tlm_conf.h"
 #include "Beidou_B1I.h"
 #include "Beidou_B3I.h"
 #include "Beidou_DNAV.h"

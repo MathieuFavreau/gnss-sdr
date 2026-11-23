@@ -23,6 +23,7 @@
 
 #include "GLONASS_L1_L2_CA.h"
 #include "glonass_gnav_navigation_message.h"
+#include "gnss_satellite.h"
 #include "gnss_synchro.h"
 #include "nav_message_packet.h"
 #include "telemetry_impl_interface.h"

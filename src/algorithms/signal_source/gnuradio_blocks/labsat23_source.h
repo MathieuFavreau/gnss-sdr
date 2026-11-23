@@ -20,7 +20,6 @@
 #ifndef GNSS_SDR_LABSAT23_SOURCE_H
 #define GNSS_SDR_LABSAT23_SOURCE_H
 
-#include "concurrent_queue.h"
 #include "gnss_block_interface.h"
 #include <gnuradio/block.h>
 #include <pmt/pmt.h>
@@ -32,6 +31,9 @@
 #include <string>
 #include <utility>
 #include <vector>
+
+template <typename Data>
+class Concurrent_Queue;
 
 /** \addtogroup Signal_Source
  * \{ */

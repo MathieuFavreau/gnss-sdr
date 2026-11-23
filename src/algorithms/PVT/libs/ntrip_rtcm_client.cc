@@ -16,6 +16,7 @@
 
 #include "ntrip_rtcm_client.h"
 #include "ntrip_rtk_signals.h"
+#include "pvt_conf.h"
 #include "rtklib_rtcm.h"
 #include "rtklib_rtkcmn.h"
 #include "rtklib_stream.h"

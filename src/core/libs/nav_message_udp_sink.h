@@ -18,7 +18,6 @@
 #ifndef GNSS_SDR_NAV_MESSAGE_UDP_SINK_H
 #define GNSS_SDR_NAV_MESSAGE_UDP_SINK_H
 
-#include "nav_message_packet.h"
 #include "serdes_nav_message.h"
 #include <boost/asio.hpp>
 #include <memory>
@@ -35,6 +34,8 @@ using b_io_context = boost::asio::io_context;
 #else
 using b_io_context = boost::asio::io_service;
 #endif
+
+class Nav_Message_Packet;
 
 class Nav_Message_Udp_Sink
 {

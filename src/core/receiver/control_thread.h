@@ -25,7 +25,6 @@
 #include "agnss_ref_time.h"        // for Agnss_Ref_Time
 #include "channel_event.h"         // for channel_event_sptr
 #include "command_event.h"         // for command_event_sptr
-#include "concurrent_queue.h"      // for Concurrent_Queue
 #include "gnss_sdr_supl_client.h"  // for Gnss_Sdr_Supl_Client
 #include "tcp_cmd_interface.h"     // for TcpCmdInterface
 #include <pmt/pmt.h>
@@ -38,6 +37,9 @@
 #include <typeinfo>  // for std::type_info, typeid
 #include <utility>   // for pair
 #include <vector>    // for vector
+
+template <typename Data>
+class Concurrent_Queue;
 
 #ifdef ENABLE_FPGA
 #include <boost/thread.hpp>  // for boost::thread

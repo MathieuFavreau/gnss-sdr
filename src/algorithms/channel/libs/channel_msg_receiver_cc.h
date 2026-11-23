@@ -17,7 +17,7 @@
 #ifndef GNSS_SDR_CHANNEL_MSG_RECEIVER_CC_H
 #define GNSS_SDR_CHANNEL_MSG_RECEIVER_CC_H
 
-#include "channel_fsm.h"
+#include "gnss_block_interface.h"
 #include <gnuradio/block.h>
 #include <pmt/pmt.h>
 #include <cstdint>
@@ -30,6 +30,7 @@
 
 
 class channel_msg_receiver_cc;
+class ChannelFsm;
 
 using channel_msg_receiver_cc_sptr = gnss_shared_ptr<channel_msg_receiver_cc>;
 
@@ -41,7 +42,7 @@ channel_msg_receiver_cc_sptr channel_msg_receiver_make_cc(std::shared_ptr<Channe
 class channel_msg_receiver_cc : public gr::block
 {
 public:
-    ~channel_msg_receiver_cc() = default;  //!< Default destructor
+    ~channel_msg_receiver_cc() override;  //!< Default destructor
 
     /*!
      * \brief Applies a channel event (1: positive acquisition, 2: negative

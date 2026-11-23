@@ -16,6 +16,7 @@
  */
 
 #include "ion_gsms_signal_source.h"
+#include "configuration_interface.h"
 #include "gnss_sdr_string_literals.h"
 #include "gnss_sdr_valve.h"
 #include <gnuradio/blocks/copy.h>

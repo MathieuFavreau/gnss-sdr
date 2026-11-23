@@ -23,7 +23,6 @@
 #define FRIEND_TEST(test_case_name, test_name) \
     friend class test_case_name##_##test_name##_Test
 
-#include "galileo_inav_message.h"    // for OSNMA_msg
 #include "gnss_block_interface.h"    // for gnss_shared_ptr
 #include "osnma_crypto_material.h"   // for OSNMA cryptographic material manager
 #include "osnma_data.h"              // for OSNMA_data structures
@@ -48,6 +47,7 @@
 
 class OSNMA_DSM_Reader;
 class Gnss_Crypto;
+class OSNMA_msg;
 class Osnma_Helper;
 class osnma_msg_receiver;
 

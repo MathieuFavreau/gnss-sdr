@@ -18,7 +18,6 @@
 #ifndef GNSS_SDR_ACQ_CONF_FPGA_H
 #define GNSS_SDR_ACQ_CONF_FPGA_H
 
-#include "configuration_interface.h"
 #include <gnuradio/gr_complex.h>
 #include <cstdint>
 #include <string>
@@ -31,6 +30,8 @@
  * Library with utilities for GNSS signal acquisition
  * \{ */
 
+
+class ConfigurationInterface;
 
 class Acq_Conf_Fpga
 {

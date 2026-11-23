@@ -18,7 +18,6 @@
 #define GNSS_SDR_TELEMETRY_IMPL_INTERFACE_H
 
 #include "gnss_block_interface.h"
-#include "gnss_satellite.h"
 #include <gnuradio/block.h>
 #include <gnuradio/io_signature.h>
 #include <cstdint>
@@ -29,6 +28,7 @@
 
 class Tlm_Conf;
 class Tlm_CRC_Stats;
+class Gnss_Satellite;
 
 /** \addtogroup Telemetry_Decoder
  * \{

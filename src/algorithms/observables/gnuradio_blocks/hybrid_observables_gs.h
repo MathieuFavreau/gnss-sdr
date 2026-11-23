@@ -20,7 +20,6 @@
 #ifndef GNSS_SDR_HYBRID_OBSERVABLES_GS_H
 #define GNSS_SDR_HYBRID_OBSERVABLES_GS_H
 
-#include "deterministic_clock.h"
 #include "gnss_block_interface.h"
 #include "gnss_time.h"  // for timetags produced by Tracking
 #include "obs_conf.h"
@@ -48,6 +47,7 @@
 
 class Gnss_Satellite;
 class Gnss_Synchro;
+class DeterministicProducer;
 class hybrid_observables_gs;
 
 template <class T>

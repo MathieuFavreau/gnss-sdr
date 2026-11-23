@@ -19,6 +19,7 @@
 
 
 #include "an_packet_printer.h"
+#include "gnss_synchro.h"
 #include "rtklib_solver.h"  // for Rtklib_Solver
 #include <cmath>            // for M_PI
 #include <cstring>          // for memcpy

@@ -16,8 +16,10 @@
  */
 
 #include "file_timestamp_signal_source.h"
+#include "configuration_interface.h"
 #include "gnss_sdr_flags.h"
 #include "gnss_sdr_string_literals.h"
+#include "gnss_sdr_timestamp.h"
 #include <string>
 
 #if USE_GLOG_AND_GFLAGS

@@ -20,6 +20,7 @@
  */
 
 #include "gnss_flowgraph.h"
+#include "concurrent_queue.h"
 #include "Beidou_B1C.h"
 #include "Beidou_B1I.h"
 #include "Beidou_B2a.h"
@@ -49,6 +50,7 @@
 #include "nav_message_monitor.h"
 #include "pcps_acquisition_adapter.h"
 #include "qzss.h"
+#include "satellite_visibility.h"
 #include "signal_conditioner.h"
 #include "signal_source_interface.h"
 #include "stream_batcher.h"

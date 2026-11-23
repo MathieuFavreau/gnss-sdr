@@ -27,8 +27,9 @@
 #include <pugixml.hpp>
 #include <cmath>      // for pow
 #include <exception>  // for exception
-#include <iostream>   // for cerr
-#include <utility>    // for pair
+#include <fstream>
+#include <iostream>  // for cerr
+#include <utility>   // for pair
 #include <vector>
 
 #if USE_GLOG_AND_GFLAGS

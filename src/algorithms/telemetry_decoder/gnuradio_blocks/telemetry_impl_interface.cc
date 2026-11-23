@@ -15,6 +15,7 @@
  */
 
 #include "telemetry_impl_interface.h"
+#include "gnss_satellite.h"
 #include "tlm_crc_stats.h"
 #include <pmt/pmt_sugar.h>
 

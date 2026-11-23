@@ -22,6 +22,7 @@
  */
 
 #include "gps_l1_ca_tcp_connector_tracking_cc.h"
+#include "gnss_synchro.h"
 #include "GPS_L1_CA.h"
 #include "gnss_satellite.h"
 #include "gnss_sdr_flags.h"

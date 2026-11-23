@@ -17,6 +17,8 @@
  */
 
 #include "pcps_assisted_acquisition_cc.h"
+#include "channel_fsm.h"
+#include "gnss_synchro.h"
 #include "GNSS_MATH_CONSTANTS.h"
 #include "concurrent_map.h"
 #include "gps_acq_assist.h"

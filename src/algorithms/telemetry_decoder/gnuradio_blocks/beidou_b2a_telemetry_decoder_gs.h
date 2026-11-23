@@ -18,12 +18,14 @@
 
 #include "Beidou_CNAV2.h"
 #include "beidou_cnav2_navigation_message.h"
+#include "gnss_satellite.h"
 #include "nav_message_packet.h"
 #include "telemetry_impl_interface.h"
-#include "tlm_conf.h"
 #include <array>
 #include <deque>
 #include <vector>
+class Tlm_Conf;
+
 
 class Gnss_Satellite;
 class beidou_b2a_telemetry_decoder_gs;

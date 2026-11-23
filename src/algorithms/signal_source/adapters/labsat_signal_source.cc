@@ -15,6 +15,7 @@
  */
 
 #include "labsat_signal_source.h"
+#include "concurrent_queue.h"
 #include "configuration_interface.h"
 #include "gnss_sdr_string_literals.h"
 #include "labsat23_source.h"

@@ -21,13 +21,15 @@
 #ifndef GNSS_SDR_GNSS_SDR_VALVE_H
 #define GNSS_SDR_GNSS_SDR_VALVE_H
 
-#include "concurrent_queue.h"
 #include "gnss_block_interface.h"
 #include <gnuradio/sync_block.h>  // for sync_block
 #include <gnuradio/types.h>       // for gr_vector_const_void_star
 #include <pmt/pmt.h>
 #include <cstddef>  // for size_t
 #include <cstdint>
+
+template <typename Data>
+class Concurrent_Queue;
 
 /** \addtogroup Signal_Source
  * \{ */

@@ -19,9 +19,7 @@
 #ifndef GNSS_SDR_FILE_TIMESTAMP_SIGNAL_SOURCE_H
 #define GNSS_SDR_FILE_TIMESTAMP_SIGNAL_SOURCE_H
 
-#include "configuration_interface.h"
 #include "file_source_base.h"
-#include "gnss_sdr_timestamp.h"
 #include <string>
 
 /** \addtogroup Signal_Source
@@ -29,6 +27,10 @@
 /** \addtogroup Signal_Source_adapters
  * \{ */
 
+class ConfigurationInterface;
+class Gnss_Sdr_Timestamp;
+template <typename Data>
+class Concurrent_Queue;
 
 /*!
  * \brief Class that reads signals samples from a file

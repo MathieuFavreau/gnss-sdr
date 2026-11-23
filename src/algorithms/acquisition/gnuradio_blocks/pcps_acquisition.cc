@@ -20,6 +20,7 @@
  */
 
 #include "pcps_acquisition.h"
+#include "channel_fsm.h"
 #include "GLONASS_L1_L2_CA.h"     // for GLONASS_PRN
 #include "GNSS_MATH_CONSTANTS.h"  // for TWO_PI
 #include "gnss_frequencies.h"

@@ -17,6 +17,8 @@
  */
 
 #include "pcps_acquisition_adapter.h"
+#include "channel_fsm.h"
+#include "gnss_synchro.h"
 #include "Beidou_B1C.h"
 #include "Beidou_B1I.h"
 #include "Beidou_B2a.h"

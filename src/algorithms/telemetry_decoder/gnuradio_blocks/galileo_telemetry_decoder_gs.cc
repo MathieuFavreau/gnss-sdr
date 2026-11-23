@@ -19,6 +19,7 @@
 
 
 #include "galileo_telemetry_decoder_gs.h"
+#include "tlm_conf.h"
 #include "Galileo_E1.h"   // for GALILEO_E1_CODE_PERIOD_MS
 #include "Galileo_E5a.h"  // for GALILEO_E5A_CODE_PERIOD_MS
 #include "Galileo_E6.h"   // for GALILEO_E6_CODE_PERIOD_MS

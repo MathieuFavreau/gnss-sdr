@@ -16,6 +16,7 @@
  */
 
 #include "monitor_pvt_udp_sink.h"
+#include "monitor_pvt.h"
 #include <boost/archive/binary_oarchive.hpp>
 #include <boost/lexical_cast.hpp>
 #include <iostream>
